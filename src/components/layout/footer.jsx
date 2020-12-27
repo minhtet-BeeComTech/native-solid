@@ -22,7 +22,6 @@ export const FooterCom = props => {
   return (
     <SafeAreaView style={{ flexDirection: 'row', borderTopWidth: 1, borderTopColor: color.footer.borderColor, backgroundColor: color.footer.bgColor }}>
       {state?.routes.map((route, index) => {
-        console.log('route', route)
         const { options } = descriptors && descriptors[route.key]
         const label =
           options.tabBarLabel !== undefined

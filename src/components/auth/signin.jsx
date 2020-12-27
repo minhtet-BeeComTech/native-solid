@@ -57,6 +57,8 @@ export const SignInCom = props => {
 
     console.log('googleCredential', googleCredential)
 
+    await handleSignIn(googleCredential)
+
     // Sign-in the user with the credential
     return auth().signInWithCredential(googleCredential)
   }
@@ -82,6 +84,8 @@ export const SignInCom = props => {
     const facebookCredential = auth.FacebookAuthProvider.credential(data.accessToken)
 
     console.log('facebookCredential :>> ', facebookCredential)
+
+    await handleSignIn(facebookCredential)
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(facebookCredential)
