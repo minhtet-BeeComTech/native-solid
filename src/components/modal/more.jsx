@@ -4,7 +4,7 @@ import { Modal, TouchableWithoutFeedback, ScrollView, SafeAreaView, TouchableOpa
 
 import { TextCom } from '../typo'
 import { emit } from 'actions'
-import { StyledModalContainer, StyledModalContact } from '../../../../src/theme'
+import { StyledModalContainer, StyledModalContact } from '../../../../../src/theme'
 
 export const MoreCom = props => {
   const { children } = props

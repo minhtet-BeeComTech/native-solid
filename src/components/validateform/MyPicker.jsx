@@ -3,7 +3,7 @@ import { View, Platform, StyleSheet } from 'react-native'
 import { Picker } from '@react-native-picker/picker'
 
 import { FieldWrapper } from './fieldwrapper'
-import { color } from '../../../../src/theme'
+import { color } from '../../../../../src/theme'
 
 export const MyPicker = ({ formikKey, formikProps, itemData, ...props }) => {
 

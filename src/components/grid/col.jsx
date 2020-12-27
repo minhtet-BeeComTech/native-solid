@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledCol } from '../../../../src/theme'
+import { StyledCol } from '../../../../../src/theme'
 
 export const Col = ({ style, children }) => {
 

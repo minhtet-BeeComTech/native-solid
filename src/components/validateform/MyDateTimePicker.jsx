@@ -7,7 +7,7 @@ import moment from 'moment'
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
 import { FieldWrapper } from './fieldwrapper'
-import { color } from '../../../../src/theme'
+import { color } from '../../../../../src/theme'
 
 export const MyDateTimePicker = ({ formikKey, formikProps, max, ...props }) => {
   const [show, setShow] = useState(false)

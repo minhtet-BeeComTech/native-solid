@@ -2,7 +2,7 @@ import React from 'react'
 import { Modal, View, TouchableWithoutFeedback, ScrollView, SafeAreaView } from 'react-native'
 
 import { TextCom } from '../typo'
-import { color, StyledModalContainer, StyledModalContact } from '../../../../src/theme'
+import { color, StyledModalContainer, StyledModalContact } from '../../../../../src/theme'
 
 export const ModalCom = props => {
   const { children, modalVisible, setModalVisible } = props

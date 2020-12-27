@@ -4,7 +4,7 @@ import { launchCamera, launchImageLibrary } from 'react-native-image-picker'
 
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
-import { StyledImagePicker } from '../../../../src/theme'
+import { StyledImagePicker } from '../../../../../src/theme'
 
 export const ImagePickerCom = props => {
   const { placeholder, onHandleChange, launchType, icon } = props

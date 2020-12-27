@@ -12,7 +12,7 @@
 
 import { Dimensions } from 'react-native'
 import styled from 'styled-components'
-import { color } from '../../../../src/theme'
+import { color } from '../../../../../src/theme'
 
 const { width, height } = Dimensions.get('window')
 

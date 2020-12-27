@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyledCheckBoxCon, StyledCheckBox, StyledTick } from '../../../../src/theme'
+import { StyledCheckBoxCon, StyledCheckBox, StyledTick } from '../../../../../src/theme'
 
 export const CheckBoxCom = props => {
   const { value, onValueChange } = props

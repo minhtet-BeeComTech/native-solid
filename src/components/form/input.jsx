@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyledInput } from '../../../../src/theme'
+import { StyledInput } from '../../../../../src/theme'
 
 export const InputCom = props => {
 
