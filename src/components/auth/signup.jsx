@@ -110,7 +110,10 @@ export const SignUpCom = props => {
                   placeholder='Enter your date of birth'
                   formikKey='dob'
                   formikProps={formikProps}
-                  max={new Date(maxDate)}
+                  mode='date'
+                  is24Hour={true}
+                  display='default'
+                  maximumDate={new Date(maxDate)}
                   required
                 />
                 <ButtonCom
