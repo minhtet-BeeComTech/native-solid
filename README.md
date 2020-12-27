@@ -1,2 +1,3 @@
 # mhk-solid
-acilitate my react native project workflow
+
+facilitate my react native project workflow
