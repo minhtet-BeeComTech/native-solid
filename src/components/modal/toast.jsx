@@ -2,9 +2,10 @@ import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { Modal, View, TouchableWithoutFeedback, ScrollView, SafeAreaView } from 'react-native'
 
+import { TextCom } from '../typo'
+import { IconCom } from '../icon'
 import { emit } from 'actions'
-import { StyledModalContainer, StyledModalContact } from './style'
-import { StyledText, StyledIcon } from '../../theme'
+import { StyledModalContainer, StyledModalContact } from '../../../../src/theme'
 
 export const Toast = () => {
   const { toastModalVisible, toast_data } = useSelector(state => state.emit)
@@ -47,11 +48,11 @@ export const Toast = () => {
                 <StyledModalContact style={{ position: 'absolute', bottom: 25 }}>
                   <View style={{ flexDirection: 'row' }}>
                     {toast_data?.type && <View style={{ marginRight: 5 }}>
-                      <StyledIcon name={handleIconName(toast_data?.type)} size='xl' color={toast_data?.type} />
+                      <IconCom name={handleIconName(toast_data?.type)} iconsize='xl' color={toast_data?.type} />
                     </View>}
                     <View>
-                      {toast_data?.title && <StyledText weight='lg' size='md'>{toast_data?.title}</StyledText>}
-                      {toast_data?.desc && <StyledText>{toast_data?.desc}</StyledText>}
+                      {toast_data?.title && <TextCom weight='lg' size='md'>{toast_data?.title}</TextCom>}
+                      {toast_data?.desc && <TextCom>{toast_data?.desc}</TextCom>}
                     </View>
                   </View>
                 </StyledModalContact>

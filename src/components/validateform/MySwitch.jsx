@@ -1,18 +1,18 @@
 import React from 'react'
 import { Switch } from 'react-native'
 
-import { FieldWrapper } from './FieldWrapper'
+import { FieldWrapper } from './fieldwrapper'
 
-export const MySwitch = ({ formikKey, formikProps, label, ...rest }) => {
+export const MySwitch = ({ formikKey, formikProps, ...props }) => {
 
   return (
-    <FieldWrapper label={label} formikKey={formikKey} formikProps={formikProps}>
+    <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>
       <Switch
         value={formikProps.values[formikKey]}
         onValueChange={value => {
           formikProps.setFieldValue(formikKey, value);
         }}
-        {...rest}
+        {...props}
       />
     </FieldWrapper>
   )

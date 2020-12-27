@@ -1,12 +1,13 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { Modal, View, TouchableWithoutFeedback, ScrollView, SafeAreaView } from 'react-native'
+import { Modal, TouchableWithoutFeedback, ScrollView, SafeAreaView, TouchableOpacity } from 'react-native'
 
+import { TextCom } from '../typo'
 import { emit } from 'actions'
-import { StyledModalContainer, StyledModalContact } from './style'
-import { StyledText } from '../../theme'
+import { StyledModalContainer, StyledModalContact } from '../../../../src/theme'
 
-export const MoreCom = () => {
+export const MoreCom = props => {
+  const { children } = props
   const { moreModalVisible, more_data } = useSelector(state => state.emit)
   const dispatch = useDispatch()
 
@@ -24,12 +25,16 @@ export const MoreCom = () => {
       <SafeAreaView style={{ flex: 1, backgroundColor: 'transparent' }}>
         <ScrollView contentContainerStyle={{ flexGrow: 1 }}>
           <TouchableWithoutFeedback onPress={() => handleCloseToastModal(!moreModalVisible)}>
-            <StyledModalContainer style={{position: 'relative'}}>
+            <StyledModalContainer style={{ position: 'relative' }}>
               <TouchableWithoutFeedback onPress={() => { }}>
-                <StyledModalContact style={{ position: 'absolute', width: '60%', top: 40, right: 20 }}>
-                  <View>
-                    <StyledText>Example</StyledText>
-                  </View>
+                <StyledModalContact style={{ position: 'absolute', width: '50%', top: 40, right: 20 }}>
+                  {children ?
+                    children
+                    :
+                    <View>
+                      <TextCom>please provide modal content!</TextCom>
+                    </View>
+                  }
                 </StyledModalContact>
               </TouchableWithoutFeedback>
             </StyledModalContainer>

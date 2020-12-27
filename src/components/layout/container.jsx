@@ -1,36 +1,33 @@
-import React, { useEffect, useState } from 'react'
-import { StatusBar, ScrollView, RefreshControl, View, SafeAreaView, Dimensions } from "react-native"
-import NetInfo from '@react-native-community/netinfo'
+import React from 'react'
+import PropTypes from 'prop-types'
+import { StatusBar, ScrollView, RefreshControl, View, SafeAreaView } from 'react-native'
+import { useNetInfo } from "@react-native-community/netinfo"
 
-import { color } from '../../theme'
+import { IconCom } from '../icon'
+import { TextCom } from '../typo'
+import { color } from '../../../../src/theme'
 import Loader from './loader'
 
-const { width, height } = Dimensions.get('window')
-
 export const ContainerCom = props => {
-  const { isLoading, isRefreshing, onRefresh, full, style, content, contentCenter, header } = props
+  const { isLoading, isRefreshing, onRefresh, full, noScroll, header } = props
+  const netInfo = useNetInfo()
 
-  const [isConnected, setIsConnected] = useState(false)
-
-  useEffect(() => {
-    checkNetwork()
-  }, [])
-
-  const checkNetwork = () => {
-    NetInfo.fetch().then(state => {
-      setIsConnected(state.isConnected)
-      !state.isConnected && alert('No Internet Connection !')
-      state.isConnected && isLoading && setTimeout(() => {
-        alert('Connection Time Out !')
-      }, 8000)
-    })
-  }
+  const handleViewProps = () => (
+    netInfo?.isConnected ?
+      props.children
+      :
+      netInfo?.details && <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center', backgroundColor: color.container.bgColor }}>
+        <IconCom name='signal-cellular-off' color='primary' iconsize='xl' />
+        <TextCom>No Internet Connection!</TextCom>
+        <TextCom>Please check your connection and try again!</TextCom>
+      </View>
+  )
 
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: color.container.bgColor, width: width }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: color.container.bgColor }}>
       <StatusBar backgroundColor={color.statusBar.bgColor} barStyle='dark-content' />
       {header}
-      <ScrollView
+      {!noScroll ? <ScrollView
         style={{ flex: 1 }}
         contentContainerStyle={{ flexGrow: 1 }}
         scrollEnabled={true}
@@ -39,9 +36,14 @@ export const ContainerCom = props => {
         }
       >
         <View style={{ padding: full ? 0 : 5, flexGrow: 1 }}>
-          {props.children}
+          {handleViewProps()}
         </View>
       </ScrollView>
+        :
+        <View style={{ padding: full ? 0 : 5, flexGrow: 1 }}>
+          {handleViewProps()}
+        </View>
+      }
       {isLoading && <Loader />}
     </SafeAreaView>
   )
@@ -50,4 +52,5 @@ export const ContainerCom = props => {
 ContainerCom.defaultProps = {
   isLoading: false,
   isRefreshing: false,
+  children: PropTypes.element.isRequired
 }

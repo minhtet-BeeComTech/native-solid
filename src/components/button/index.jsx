@@ -1,10 +1,7 @@
 import React from 'react'
 
-import {
-  StyledText,
-  StyledBtnImage,
-  StyledButton
-} from '../../theme'
+import { TextCom } from '../typo'
+import { StyledBtnImage, StyledButton } from '../../../../src/theme'
 
 export const ButtonCom = props => {
   const { text, img } = props
@@ -12,9 +9,16 @@ export const ButtonCom = props => {
   return (
     <StyledButton {...props} >
       {img && <StyledBtnImage source={img} />}
-      <StyledText {...props}>
+      <TextCom {...props}>
         {text}
-      </StyledText>
+      </TextCom>
     </StyledButton>
   )
+}
+
+ButtonCom.defaultProps = {
+  bgColor: 'primary',
+  color: 'white',
+  type: 'full',
+  text: 'button'
 }

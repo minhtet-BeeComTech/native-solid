@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-import { FieldWrapper } from './FieldWrapper'
-import { StyledInput } from '../../theme'
+import { FieldWrapper } from './fieldwrapper'
+import { InputCom } from '../form'
+import { IconCom } from '../icon'
 
-export const MyTextInput = ({ label, formikProps, formikKey, ...rest }) => {
+export const MyTextInput = ({ formikKey, formikProps, secure, ...props }) => {
+  const [isHide, setIsHide] = useState(secure ? true : false)
 
   return (
-    <FieldWrapper label={label} formikKey={formikKey} formikProps={formikProps}>
-      <StyledInput
+    <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>
+      <InputCom
+        value={formikProps.values[formikKey]}
         onChangeText={formikProps.handleChange(formikKey)}
         onBlur={formikProps.handleBlur(formikKey)}
-        {...rest}
+        secureTextEntry={secure ? isHide : false}
+        {...props}
       />
+      {
+        secure && <IconCom
+          name={!isHide ? 'visibility' : 'visibility-off'}
+          iconsize='xl'
+          color='gray_light'
+          style={{ position: 'absolute', top: 7, right: 10 }}
+          onPress={() => setIsHide(!isHide)}
+        />
+      }
     </FieldWrapper>
   )
+}
+
+MyTextInput.defaultProps = {
+  secure: false
 }

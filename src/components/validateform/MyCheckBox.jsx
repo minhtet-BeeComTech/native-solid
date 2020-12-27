@@ -1,18 +1,18 @@
 import React from 'react'
 
-import { FieldWrapper } from './FieldWrapper'
+import { FieldWrapper } from './fieldwrapper'
 import { CheckBoxCom } from '../form'
 
-export const MyCheckBox = ({ formikKey, formikProps, label, ...rest }) => {
+export const MyCheckBox = ({ formikKey, formikProps, ...props }) => {
 
   return (
-    <FieldWrapper label={label} formikKey={formikKey} formikProps={formikProps}>
+    <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>
       <CheckBoxCom
         value={formikProps.values[formikKey]}
         onValueChange={() => {
           formikProps.setFieldValue(formikKey, !formikProps.values[formikKey]);
         }}
-        {...rest}
+        {...props}
       />
     </FieldWrapper>
   )

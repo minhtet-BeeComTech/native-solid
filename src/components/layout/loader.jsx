@@ -1,11 +1,10 @@
 import React from 'react'
 import { ActivityIndicator } from 'react-native'
 
-import { color } from '../../theme'
-import { StyledLoader } from './style'
+import { color, StyledLoader } from '../../../../src/theme'
 
 export default () => (
   <StyledLoader>
-    <ActivityIndicator size="large" color={color.loading.primary} />
+    <ActivityIndicator size='large' color={color.loading.primary} />
   </StyledLoader>
 )

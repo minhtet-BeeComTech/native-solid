@@ -1,7 +1,8 @@
 import React from 'react'
-import { StyledInput } from '../../theme'
 
-export const InputCom = (props) => {
+import { StyledInput } from '../../../../src/theme'
+
+export const InputCom = props => {
 
   return (
     <StyledInput {...props}/>

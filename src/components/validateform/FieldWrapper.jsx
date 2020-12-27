@@ -1,13 +1,16 @@
 import React from 'react'
+import { View } from 'react-native'
 
-import { StyledText } from '../../theme'
+import { TextCom } from '../typo'
 
-export const FieldWrapper = ({ children, label, formikProps, formikKey }) => (
+export const FieldWrapper = ({ formikKey, formikProps, label, required, children, ...props }) => (
   <>
-    <StyledText style={{ marginBottom: 3 }}>{label}</StyledText>
-    {children}
-    <StyledText size='xs' color='error' style={{ marginBottom: 10 }}>
+    <TextCom style={{ marginBottom: 3 }}>{label} {required && '*'}</TextCom>
+    <View {...props}>
+      {children}
+    </View>
+    <TextCom size='xs' color='error' style={{ marginBottom: 10 }}>
       {formikProps.touched[formikKey] && formikProps.errors[formikKey]}
-    </StyledText>
+    </TextCom>
   </>
 )
