@@ -1,5 +1,3 @@
-# mhk-solid
+# native-solid
 
 facilitate my react native project workflow
-
-../../../../../src/theme

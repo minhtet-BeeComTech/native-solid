@@ -1,11 +1,12 @@
 {
   "name": "native-solid",
-  "version": "1.0.9",
+  "version": "1.1.0",
   "description": "facilitate react native workflow",
   "main": "./src",
   "scripts": {
     "test": "testing",
-    "deploy": "npm publish"
+    "deploy": "npm publish",
+    "size": "t=\"$(npm pack .)\"; wc -c \"${t}\"; tar tvf \"${t}\"; rm \"${t}\";"
   },
   "repository": {
     "type": "git",
