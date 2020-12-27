@@ -1,5 +1,5 @@
 {
-  "name": "mhk-solid",
+  "name": "native-solid",
   "version": "1.0.5",
   "description": "facilitate react native workflow",
   "main": "./src",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/minhtet-BeeComTech/mhk-solid.git"
+    "url": "git+https://github.com/minhtet-BeeComTech/native-solid.git"
   },
   "keywords": [
     "kta"
@@ -17,9 +17,9 @@
   "author": "min htet",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/minhtet-BeeComTech/mhk-solid/issues"
+    "url": "https://github.com/minhtet-BeeComTech/native-solid/issues"
   },
-  "homepage": "https://github.com/minhtet-BeeComTech/mhk-solid#readme",
+  "homepage": "https://github.com/minhtet-BeeComTech/native-solid#readme",
   "dependencies": {
     "@react-native-community/netinfo": "^5.9.9",
     "@react-native-picker/picker": "^1.9.4",
