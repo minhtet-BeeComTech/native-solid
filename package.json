@@ -2,7 +2,7 @@
   "name": "mhk-solid",
   "version": "1.0.0",
   "description": "facilitate react native workflow",
-  "main": "src/index.js",
+  "main": "./src",
   "scripts": {
     "test": "testing",
     "deploy": "npm publish"
