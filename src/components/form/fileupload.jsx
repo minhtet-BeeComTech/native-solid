@@ -5,7 +5,7 @@ import RNFS from 'react-native-fs'
 
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
-import { StyledFileUpload } from '../../../../../src/theme'
+import { StyledFileUpload } from 'theme'
 
 export const FileUploadCom = props => {
   const { placeholder, onHandleChange } = props

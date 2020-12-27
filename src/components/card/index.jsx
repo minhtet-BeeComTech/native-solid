@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledCard } from '../../../../../src/theme'
+import { StyledCard } from 'theme'
 
 export const CardCom = props => {
 

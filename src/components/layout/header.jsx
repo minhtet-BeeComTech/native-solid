@@ -6,7 +6,7 @@ import { MoreCom } from '../modal'
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
 import { emit } from 'actions'
-import { StyledHeaderContainer, color } from '../../../../../src/theme'
+import { StyledHeaderContainer, color } from 'theme'
 
 export const HeaderCom = props => {
   const { navigation, text, back, menu } = props

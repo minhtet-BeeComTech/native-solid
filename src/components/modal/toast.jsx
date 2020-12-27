@@ -5,7 +5,7 @@ import { Modal, View, TouchableWithoutFeedback, ScrollView, SafeAreaView } from 
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
 import { emit } from 'actions'
-import { StyledModalContainer, StyledModalContact } from '../../../../../src/theme'
+import { StyledModalContainer, StyledModalContact } from 'theme'
 
 export const Toast = () => {
   const { toastModalVisible, toast_data } = useSelector(state => state.emit)

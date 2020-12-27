@@ -5,7 +5,7 @@ import { useNetInfo } from "@react-native-community/netinfo"
 
 import { IconCom } from '../icon'
 import { TextCom } from '../typo'
-import { color } from '../../../../../src/theme'
+import { color } from 'theme'
 import Loader from './loader'
 
 export const ContainerCom = props => {

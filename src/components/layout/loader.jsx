@@ -1,7 +1,7 @@
 import React from 'react'
 import { ActivityIndicator } from 'react-native'
 
-import { color, StyledLoader } from '../../../../../src/theme'
+import { color, StyledLoader } from 'theme'
 
 export default () => (
   <StyledLoader>

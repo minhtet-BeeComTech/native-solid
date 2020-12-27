@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { StyledPickerContainer, StyledPicker, StyledPickerItem } from '../../../../../src/theme'
+import { StyledPickerContainer, StyledPicker, StyledPickerItem } from 'theme'
 
 export const PickerCom = ({ itemData, ...props }) => (
   <StyledPickerContainer>

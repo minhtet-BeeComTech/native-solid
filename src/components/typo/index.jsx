@@ -1,5 +1,5 @@
 import React from 'react'
 
-import { StyledText } from '../../../../../src/theme'
+import { StyledText } from 'theme'
 
 export const TextCom = props => <StyledText {...props} />

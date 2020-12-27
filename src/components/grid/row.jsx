@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import { StyledRow } from '../../../../../src/theme'
+import { StyledRow } from 'theme'
 
 export const Row = ({ children }) => {
 

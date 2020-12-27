@@ -2,7 +2,7 @@ import React from 'react'
 import { FlatList, RefreshControl, View, ActivityIndicator } from 'react-native'
 
 import { TextCom } from '../typo'
-import { color } from '../../../../../src/theme'
+import { color } from 'theme'
 
 export const FlatListCom = ({ refreshing, onRefresh, emptytext, isLoading, ...props }) => {
 

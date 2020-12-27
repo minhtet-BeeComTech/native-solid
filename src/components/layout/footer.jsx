@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import { View, TouchableOpacity, StyleSheet, Dimensions, Image, SafeAreaView } from 'react-native'
 
 import { TextCom } from '../typo'
-import { color } from '../../../../../src/theme'
+import { color } from 'theme'
 import { getUiText } from 'utils'
 
 const { width, height } = Dimensions.get('window')

@@ -5,7 +5,7 @@ import moment from 'moment'
 
 import { TextCom } from '../typo'
 import { IconCom } from '../icon'
-import { StyledDateTimePicker } from '../../../../../src/theme'
+import { StyledDateTimePicker } from 'theme'
 
 export const DateTimePickerCom = ({ opendatePicker, show, ...props }) => (
   <>

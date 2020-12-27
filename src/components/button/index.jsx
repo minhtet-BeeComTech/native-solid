@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { TextCom } from '../typo'
-import { StyledBtnImage, StyledButton } from '../../../../../src/theme'
+import { StyledBtnImage, StyledButton } from 'theme'
 
 export const ButtonCom = props => {
   const { text, img } = props
