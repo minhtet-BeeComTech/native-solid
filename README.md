@@ -1,11 +1,11 @@
-### Native Solid
+# Native Solid
 
-# Getting Start
+## Getting Start
 ```
 npm i native-solid  (or)  yarn add native-solid
 ```
 
-# Typography
+## Typography
 ```
 import { TextCom } from 'native-solid'
 ```
@@ -17,7 +17,7 @@ import { TextCom } from 'native-solid'
 | weight          | Use the typo weight in the local theme file |
 | style           | you can use custom styles                   |
 
-# Button
+## Button
 ```
 import { ButtonCom } from 'native-solid'
 ```
@@ -32,7 +32,7 @@ import { ButtonCom } from 'native-solid'
 | img             | use image source dir or url for icon type button                 |
 | style           | you can use custom styles                                        |
 
-# Card
+## Card
 ```
 import { CardCom } from 'native-solid'
 ```
@@ -43,7 +43,7 @@ import { CardCom } from 'native-solid'
 | children        | component                                        |
 | style           | you can use custom styles                        |
 
-# Grid
+## Grid
 ```
 import { Row, Col } from 'native-solid'
 ```
@@ -53,7 +53,7 @@ import { Row, Col } from 'native-solid'
 | children        | component                 |
 | style           | you can use custom styles |
 
-# List
+## List
 ```
 import { FlatListCom } from 'native-solid'
 ```
@@ -66,17 +66,17 @@ import { FlatListCom } from 'native-solid'
 | isLoading       | There are values ​​of true and false. The default is false |
 | style           | you can use custom styles                              |
 
-# Form
+## Form
 ```
 import { CheckBoxCom, DateTimePickerCom, FileUploadCom, ImagePickerCom, InputCom, PickerCom, RadioCom } from 'native-solid'
 ```
 
-# Validate Form
+## Validate Form
 ```
 import { VCheckBox, VDateTimePicker, VFileUpload, VImagePicker, VInput, VPicker, VRadio } from 'native-solid'
 ```
 
-# Layout
+## Layout
 ```
 import { ContainerCom, FooterCom, HeaderCom, DrawerCom } from 'native-solid'
 ```
