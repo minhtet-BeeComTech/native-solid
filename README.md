@@ -1,4 +1,4 @@
-# Installation
+# Getting Start
 ```
 npm i native-solid  (or)  yarn add native-solid
 ```
