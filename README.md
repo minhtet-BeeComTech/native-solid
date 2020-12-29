@@ -1,4 +1,7 @@
-# native-solid
+# Installation
+- npm i native-solid
+(or)
+- yarn add native-solid
 
 # Typography
 |attribute props           | Description |
