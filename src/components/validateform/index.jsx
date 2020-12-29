@@ -1,5 +1,4 @@
 export * from './mytextinput'
-export * from './mytextarea'
 export * from './mypicker'
 export * from './mycheckbox'
 export * from './myradio'

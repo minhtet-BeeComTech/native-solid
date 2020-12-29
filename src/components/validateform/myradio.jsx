@@ -10,7 +10,7 @@ export const MyRadio = ({ formikKey, formikProps, ...props }) => {
       <RadioCom
         value={formikProps.values[formikKey]}
         onValueChange={() => {
-          formikProps.setFieldValue(formikKey, !formikProps.values[formikKey]);
+          formikProps.setFieldValue(formikKey, !formikProps.values[formikKey])
         }}
         {...props}
       />

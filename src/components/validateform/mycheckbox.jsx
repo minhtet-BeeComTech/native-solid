@@ -8,7 +8,7 @@ export const MyCheckBox = ({ formikKey, formikProps, ...props }) => (
     <CheckBoxCom
       value={formikProps.values[formikKey]}
       onValueChange={() => {
-        formikProps.setFieldValue(formikKey, !formikProps.values[formikKey]);
+        formikProps.setFieldValue(formikKey, !formikProps.values[formikKey])
       }}
       {...props}
     />

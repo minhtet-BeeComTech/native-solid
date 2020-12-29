@@ -10,7 +10,7 @@ export const MySwitch = ({ formikKey, formikProps, ...props }) => {
       <Switch
         value={formikProps.values[formikKey]}
         onValueChange={value => {
-          formikProps.setFieldValue(formikKey, value);
+          formikProps.setFieldValue(formikKey, value)
         }}
         {...props}
       />
