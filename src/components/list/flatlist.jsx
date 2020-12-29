@@ -42,5 +42,6 @@ export const FlatListCom = ({ refreshing, onRefresh, emptytext, isLoading, ...pr
 FlatListCom.defaultProps = {
   data: [],
   refreshing: false,
+  isLoading: false,
   emptytext: 'No Data Available!'
 }
