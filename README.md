@@ -6,6 +6,7 @@ npm i native-solid  (or)  yarn add native-solid
 ```
 
 ## Typography
+
 ```js
 import { TextCom } from 'native-solid'
 ```
@@ -18,6 +19,7 @@ import { TextCom } from 'native-solid'
 | style           | you can use custom styles                   |
 
 ## Button
+
 ```js
 import { ButtonCom } from 'native-solid'
 ```
@@ -33,6 +35,7 @@ import { ButtonCom } from 'native-solid'
 | style           | you can use custom styles                                        |
 
 ## Card
+
 ```js
 import { CardCom } from 'native-solid'
 ```
@@ -67,8 +70,10 @@ import { FlatListCom } from 'native-solid'
 | style           | you can use custom styles                              |
 
 ## Form
+
 ```js
 import { CheckBoxCom, DateTimePickerCom, FileUploadCom, ImagePickerCom, InputCom, PickerCom, RadioCom } from 'native-solid'
+```
 
 | attribute props | Description                                            |
 |-----------------|--------------------------------------------------------|
@@ -77,14 +82,15 @@ import { CheckBoxCom, DateTimePickerCom, FileUploadCom, ImagePickerCom, InputCom
 | emptytext       | To display when no data is available                   |
 | isLoading       | There are values ​​of true and false. The default is false |
 | style           | you can use custom styles                              |
-```
 
 ## Validate Form
+
 ```js
 import { VCheckBox, VDateTimePicker, VFileUpload, VImagePicker, VInput, VPicker, VRadio } from 'native-solid'
 ```
 
 ## Layout
+
 ```js
 import { ContainerCom, FooterCom, HeaderCom, DrawerCom } from 'native-solid'
 ```
