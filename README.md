@@ -89,8 +89,24 @@ import { CheckBoxCom, DateTimePickerCom, FileUploadCom, ImagePickerCom, InputCom
 import { VCheckBox, VDateTimePicker, VFileUpload, VImagePicker, VInput, VPicker, VRadio } from 'native-solid'
 ```
 
+| attribute props | Description                                            |
+|-----------------|--------------------------------------------------------|
+| refreshing      | There are values ​​of true and false. The default is false |
+| onRefresh       | method for refreshing                                  |
+| emptytext       | To display when no data is available                   |
+| isLoading       | There are values ​​of true and false. The default is false |
+| style           | you can use custom styles                              |
+
 ## Layout
 
 ```js
 import { ContainerCom, FooterCom, HeaderCom, DrawerCom } from 'native-solid'
 ```
+
+| attribute props | Description                                            |
+|-----------------|--------------------------------------------------------|
+| refreshing      | There are values ​​of true and false. The default is false |
+| onRefresh       | method for refreshing                                  |
+| emptytext       | To display when no data is available                   |
+| isLoading       | There are values ​​of true and false. The default is false |
+| style           | you can use custom styles                              |

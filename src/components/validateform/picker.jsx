@@ -3,7 +3,7 @@ import React from 'react'
 import { PickerCom } from '../form'
 import { FieldWrapper } from './fieldwrapper'
 
-export const MyPicker = ({ formikKey, formikProps, ...props }) => {
+export const VPicker = ({ formikKey, formikProps, ...props }) => {
 
   return (
     <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>

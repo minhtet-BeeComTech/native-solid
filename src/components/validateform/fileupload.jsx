@@ -3,7 +3,7 @@ import React from 'react'
 import { FileUploadCom } from '../form'
 import { FieldWrapper } from './fieldwrapper'
 
-export const MyFileUpload = ({ formikKey, formikProps, ...props }) => {
+export const VFileUpload = ({ formikKey, formikProps, ...props }) => {
 
   return (
     <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>

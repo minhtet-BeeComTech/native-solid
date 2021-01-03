@@ -1,16 +1,16 @@
 import React from 'react'
-import { Switch } from 'react-native'
 
 import { FieldWrapper } from './fieldwrapper'
+import { RadioCom } from '../form'
 
-export const MySwitch = ({ formikKey, formikProps, ...props }) => {
+export const VRadio = ({ formikKey, formikProps, ...props }) => {
 
   return (
     <FieldWrapper formikKey={formikKey} formikProps={formikProps} {...props}>
-      <Switch
+      <RadioCom
         value={formikProps.values[formikKey]}
-        onValueChange={value => {
-          formikProps.setFieldValue(formikKey, value)
+        onValueChange={() => {
+          formikProps.setFieldValue(formikKey, !formikProps.values[formikKey]);
         }}
         {...props}
       />

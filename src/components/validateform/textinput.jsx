@@ -4,7 +4,7 @@ import { FieldWrapper } from './fieldwrapper'
 import { InputCom } from '../form'
 import { IconCom } from '../icon'
 
-export const MyTextInput = ({ formikKey, formikProps, secure, ...props }) => {
+export const VTextInput = ({ formikKey, formikProps, secure, ...props }) => {
   const [isHide, setIsHide] = useState(secure ? true : false)
 
   return (
@@ -29,6 +29,6 @@ export const MyTextInput = ({ formikKey, formikProps, secure, ...props }) => {
   )
 }
 
-MyTextInput.defaultProps = {
+VTextInput.defaultProps = {
   secure: false
 }

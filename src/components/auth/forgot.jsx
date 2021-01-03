@@ -4,7 +4,7 @@ import { Formik } from 'formik'
 import * as Yup from 'yup'
 
 import { ButtonCom } from '../button'
-import { MyTextInput } from '../validateform'
+import { VTextInput } from '../validateform'
 import { TextCom } from '../typo'
 import styles from './style'
 
@@ -41,7 +41,7 @@ export const ForgotPassCom = props => {
           {
             formikProps => (
               <>
-                <MyTextInput
+                <VTextInput
                   label='Phone'
                   placeholder='Enter your phone'
                   formikKey='user_phone'

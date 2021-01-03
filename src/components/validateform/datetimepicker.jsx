@@ -5,7 +5,7 @@ import { Platform } from 'react-native'
 import { DateTimePickerCom } from '../form'
 import { FieldWrapper } from './fieldwrapper'
 
-export const MyDateTimePicker = ({ formikKey, formikProps, max, ...props }) => {
+export const VDateTimePicker = ({ formikKey, formikProps, max, ...props }) => {
   const [show, setShow] = useState(false)
 
   const onChange = (event, selectedDate) => {

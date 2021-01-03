@@ -7,7 +7,7 @@ import { GoogleSignin } from '@react-native-community/google-signin'
 import { LoginManager, AccessToken } from 'react-native-fbsdk'
 
 import { ButtonCom } from '../button'
-import { MyTextInput } from '../validateform'
+import { VTextInput } from '../validateform'
 import { TextCom } from '../typo'
 import { configKey } from 'controller'
 
@@ -56,7 +56,6 @@ export const SignInCom = props => {
     const googleCredential = auth.GoogleAuthProvider.credential(user_info?.idToken)
 
     console.log('googleCredential', googleCredential)
-
     await handleSignIn(googleCredential)
 
     // Sign-in the user with the credential
@@ -83,9 +82,9 @@ export const SignInCom = props => {
     // Create a Firebase credential with the AccessToken
     const facebookCredential = auth.FacebookAuthProvider.credential(data.accessToken)
 
-    console.log('facebookCredential :>> ', facebookCredential)
-
     await handleSignIn(facebookCredential)
+
+    console.log('facebookCredential :>> ', facebookCredential)
 
     // Sign-in the user with the credential
     return auth().signInWithCredential(facebookCredential)
@@ -118,14 +117,14 @@ export const SignInCom = props => {
         {
           formikProps => (
             <>
-              <MyTextInput
+              <VTextInput
                 label='Phone'
                 placeholder='Enter your phone'
                 formikKey='user_phone'
                 formikProps={formikProps}
                 keyboardType='number-pad'
               />
-              <MyTextInput
+              <VTextInput
                 label='Password'
                 placeholder='Enter your password'
                 formikKey='user_password'

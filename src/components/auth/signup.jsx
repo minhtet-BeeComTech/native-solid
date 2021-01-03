@@ -4,7 +4,7 @@ import { Formik } from 'formik'
 import * as Yup from 'yup'
 
 import { ButtonCom } from '../button'
-import { MyTextInput, MyPicker, MyDateTimePicker } from '../validateform'
+import { VTextInput, VPicker, VDateTimePicker } from '../validateform'
 import { TextCom } from '../typo'
 import { genderData } from 'data'
 import styles from './style'
@@ -66,14 +66,14 @@ export const SignUpCom = props => {
           {
             formikProps => (
               <>
-                <MyTextInput
+                <VTextInput
                   label='Name'
                   placeholder='Enter your name'
                   formikKey='name'
                   formikProps={formikProps}
                   required
                 />
-                <MyTextInput
+                <VTextInput
                   label='Phone'
                   placeholder='Enter your phone'
                   formikKey='user_phone'
@@ -81,7 +81,7 @@ export const SignUpCom = props => {
                   keyboardType='number-pad'
                   required
                 />
-                <MyTextInput
+                <VTextInput
                   label='Password'
                   placeholder='Enter your password'
                   formikKey='password'
@@ -89,7 +89,7 @@ export const SignUpCom = props => {
                   required
                   secure
                 />
-                <MyTextInput
+                <VTextInput
                   label='Confirm Password'
                   placeholder='Enter your confirm password'
                   formikKey='confirm_password'
@@ -97,7 +97,7 @@ export const SignUpCom = props => {
                   required
                   secure
                 />
-                <MyPicker
+                <VPicker
                   label='Gender'
                   placeholder={'Select your gender'}
                   formikKey='gender'
@@ -105,7 +105,7 @@ export const SignUpCom = props => {
                   itemData={genderData}
                   required
                 />
-                <MyDateTimePicker
+                <VDateTimePicker
                   label='Date of birth'
                   placeholder='Enter your date of birth'
                   formikKey='dob'
