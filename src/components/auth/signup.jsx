@@ -1,38 +1,11 @@
 import React from 'react'
 import { View } from 'react-native'
 import { Formik } from 'formik'
-import * as Yup from 'yup'
 
-import { ButtonCom } from '../button'
-import { VTextInput, VPicker, VDateTimePicker } from '../validateform'
 import { TextCom } from '../typo'
-import { genderData } from 'data'
 import styles from './style'
 
-let date = new Date()
-let maxDate = date.setFullYear(date.getFullYear() - 18)
-
-export const SignUpCom = props => {
-  const { title, handleSignUp } = props
-
-  const validationSchema = Yup.object({
-    name: Yup.string()
-      .required('Name is required'),
-    gender: Yup.string()
-      .required('Gender is required'),
-    user_phone: Yup.number()
-      .required('Phone number is required'),
-    dob: Yup.date()
-      .required('Date of birth is required'),
-    password: Yup.string()
-      .required('Password is required')
-      .min(3, 'Password is too short'),
-    confirm_password: Yup.string()
-      .required('Confirm password is required')
-      .test('passwords-match', 'Confirm password match with password', function (value) {
-        return this.parent.password === value
-      })
-  })
+export const SignUpCom = ({ title, handleSignUp, children, initialValues, validationSchema }) => {
 
   const onDataSubmit = (values, actions) => {
     setTimeout(() => {
@@ -40,15 +13,6 @@ export const SignUpCom = props => {
       actions.resetForm(initialValues)
       actions.setSubmitting(false)
     }, 1000)
-  }
-
-  const initialValues = {
-    name: '',
-    gender: '',
-    user_phone: '',
-    dob: new Date(maxDate),
-    password: '',
-    confirm_password: ''
   }
 
   return (
@@ -64,66 +28,7 @@ export const SignUpCom = props => {
           onSubmit={(values, actions) => onDataSubmit(values, actions)}
         >
           {
-            formikProps => (
-              <>
-                <VTextInput
-                  label='Name'
-                  placeholder='Enter your name'
-                  formikKey='name'
-                  formikProps={formikProps}
-                  required
-                />
-                <VTextInput
-                  label='Phone'
-                  placeholder='Enter your phone'
-                  formikKey='user_phone'
-                  formikProps={formikProps}
-                  keyboardType='number-pad'
-                  required
-                />
-                <VTextInput
-                  label='Password'
-                  placeholder='Enter your password'
-                  formikKey='password'
-                  formikProps={formikProps}
-                  required
-                  secure
-                />
-                <VTextInput
-                  label='Confirm Password'
-                  placeholder='Enter your confirm password'
-                  formikKey='confirm_password'
-                  formikProps={formikProps}
-                  required
-                  secure
-                />
-                <VPicker
-                  label='Gender'
-                  placeholder={'Select your gender'}
-                  formikKey='gender'
-                  formikProps={formikProps}
-                  itemData={genderData}
-                  required
-                />
-                <VDateTimePicker
-                  label='Date of birth'
-                  placeholder='Enter your date of birth'
-                  formikKey='dob'
-                  formikProps={formikProps}
-                  mode='date'
-                  is24Hour={true}
-                  display='default'
-                  maximumDate={new Date(maxDate)}
-                  required
-                />
-                <ButtonCom
-                  bgColor='primary'
-                  color='white'
-                  onPress={formikProps.handleSubmit}
-                  text={formikProps.isSubmitting ? 'Sign Up ...' : 'Sign Up'}
-                />
-              </>
-            )
+            formikProps => children(formikProps)
           }
         </Formik>
       </View>
