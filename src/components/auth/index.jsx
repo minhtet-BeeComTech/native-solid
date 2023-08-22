@@ -1,5 +1,0 @@
-export * from './signin'
-export * from './signup'
-export * from './otpconfirm'
-export * from './forgot'
-export * from './changepass'
