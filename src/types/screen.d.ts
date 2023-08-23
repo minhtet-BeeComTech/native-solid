@@ -1,3 +1,3 @@
 declare namespace Screen {
-  type Dialog = {}
+  type Dialog = {};
 }

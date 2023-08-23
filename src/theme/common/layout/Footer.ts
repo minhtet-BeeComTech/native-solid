@@ -1,6 +1,6 @@
-import styled from 'styled-components'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { View } from 'react-native'
+import styled from "styled-components";
+import { SafeAreaView } from "react-native-safe-area-context";
+import { View } from "react-native";
 
 export const StyledFooterFix = styled(SafeAreaView)`
   background-color: ${(props?: any) =>
@@ -13,7 +13,7 @@ export const StyledFooterFix = styled(SafeAreaView)`
   border-top-left-radius: 0;
   width: 100%;
   position: relative;
-`
+`;
 
 export const StyledCustomFooter = styled(View)`
   background-color: ${(props?: any) => props.theme.color.card.bgColor};
@@ -27,4 +27,4 @@ export const StyledCustomFooter = styled(View)`
   shadow-radius: 2.22px;
   elevation: 3;
   min-height: 50px;
-`
+`;

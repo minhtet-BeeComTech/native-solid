@@ -1,15 +1,15 @@
-import styled, { DefaultTheme } from 'styled-components'
-import { View } from 'react-native'
+import styled, { DefaultTheme } from "styled-components";
+import { View } from "react-native";
 
 //* this styled is demo stage
 
 interface IStyledSkeletonContainer {
-  theme: DefaultTheme
-  borderRadius?: number
-  width?: number
-  height?: number
-  marginBottom?: number
-  style?: any
+  theme: DefaultTheme;
+  borderRadius?: number;
+  width?: number;
+  height?: number;
+  marginBottom?: number;
+  style?: any;
 }
 
 export const StyledSkeletonContainer = styled(View)<IStyledSkeletonContainer>`
@@ -24,4 +24,4 @@ export const StyledSkeletonContainer = styled(View)<IStyledSkeletonContainer>`
   margin-bottom: ${(props) =>
     props.marginBottom || props.theme.skeletonVariable.marginBottom}px;
   overflow: hidden;
-`
+`;

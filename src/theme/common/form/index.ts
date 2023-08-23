@@ -4,23 +4,23 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-} from 'react-native'
-import styled from 'styled-components'
-import { Picker } from '@react-native-picker/picker'
+} from "react-native";
+import styled from "styled-components";
+import { Picker } from "@react-native-picker/picker";
 
 //* input field wrapper
 export const StyledFieldContainer = styled(View)`
   position: relative;
-`
+`;
 
 //* text and textArea input
 export const StyledInputContainer = styled(View)`
   position: relative;
-`
+`;
 type StyledInputProps = {
-  editable?: any
-  isError?: boolean
-}
+  editable?: any;
+  isError?: boolean;
+};
 export const StyledInput = styled(TextInput)<StyledInputProps>`
   background-color: ${(props?: any) =>
     props.theme.color.form[props?.inputBgColor] ||
@@ -41,30 +41,32 @@ export const StyledInput = styled(TextInput)<StyledInputProps>`
   align-items: flex-start;
   font-size: ${(props?: any) => {
     let size =
-      props.theme.fontSize[props?.size] || props.size || props.theme.fontSize.md
-    return size
+      props.theme.fontSize[props?.size] ||
+      props.size ||
+      props.theme.fontSize.md;
+    return size;
   }}px;
   /* shadow-color: #00000029;
   shadow-offset: 0px 1px;
   shadow-opacity: 0.20;
   shadow-radius: 2.22px;
   elevation: 3; */
-`
+`;
 
 //* start radio button
 export const StyledRadioCon = styled(TouchableOpacity)`
   margin-bottom: 10px;
   align-items: center;
   flex-direction: row;
-`
+`;
 
 type StyledRadioCircleProps = {
-  value?: any
-}
+  value?: any;
+};
 export const StyledRadioCircle = styled(View)<StyledRadioCircleProps>`
   ${(props?: any) =>
     `background-color: ${
-      props.value ? props.theme.color.form.radio_container : 'transparent'
+      props.value ? props.theme.color.form.radio_container : "transparent"
     }`};
   border-color: ${(props?: any) =>
     props.theme.color.form[props.RadioBdColor] ||
@@ -76,7 +78,7 @@ export const StyledRadioCircle = styled(View)<StyledRadioCircleProps>`
   border-width: 1px;
   align-items: center;
   justify-content: center;
-`
+`;
 export const StyledRB = styled(View)`
   background-color: ${(props?: any) =>
     props.theme.color.form[props.activeRBgColor] ||
@@ -85,7 +87,7 @@ export const StyledRB = styled(View)`
   width: 12px;
   height: 12px;
   border-radius: 50px;
-`
+`;
 //* end radio button
 
 //* start checkBox
@@ -93,11 +95,11 @@ export const StyledCheckBoxCon = styled(TouchableOpacity)`
   /* margin-bottom: 10px; */
   align-items: center;
   flex-direction: row;
-`
+`;
 
 type StyledCheckBoxProps = {
-  value?: any
-}
+  value?: any;
+};
 export const StyledCheckBox = styled(View)<StyledCheckBoxProps>`
   ${(props?: any) =>
     `background-color: ${props.theme.color.form.checkboxBgColor}`};
@@ -109,7 +111,7 @@ export const StyledCheckBox = styled(View)<StyledCheckBoxProps>`
   justify-content: center;
   margin-right: 10px;
   border-radius: 5px;
-`
+`;
 export const StyledTick = styled(View)`
   border-bottom-color: ${(props?: any) =>
     props.theme.color.form.check_selected};
@@ -120,7 +122,7 @@ export const StyledTick = styled(View)`
   border-right-width: 2px;
   border-bottom-width: 2px;
   transform: rotate(45deg);
-`
+`;
 /* ${(props?: any) => `background-color: ${props.value ? props.theme.color.form.radio_container : 'transparent'}`}; */
 // background-color: transparent;
 //* end checkBox
@@ -134,7 +136,7 @@ export const StyledFileUpload = styled(TouchableOpacity)`
   height: 40px;
   border-width: 1px;
   padding-left: 10px;
-`
+`;
 
 //* image upload button
 export const StyledImagePicker = styled(TouchableOpacity)`
@@ -145,7 +147,7 @@ export const StyledImagePicker = styled(TouchableOpacity)`
   height: 40px;
   border-width: 1px;
   padding-left: 10px;
-`
+`;
 //* end image picker
 
 //* qr upload button
@@ -157,7 +159,7 @@ export const StyledQrInput = styled(TouchableOpacity)`
   height: 40px;
   border-width: 1px;
   padding-left: 10px;
-`
+`;
 
 //* start picker input
 export const StyledPickerContainer = styled(View)`
@@ -168,23 +170,23 @@ export const StyledPickerContainer = styled(View)`
   border-width: 1px;
   padding: 0;
   margin: 0;
-`
+`;
 export const StyledPicker = styled(Picker)`
-  height: ${Platform.OS === 'ios' ? 'auto' : '40px'};
+  height: ${Platform.OS === "ios" ? "auto" : "40px"};
   margin-top: -5px;
   margin-bottom: 5px;
   margin-left: -6px;
   margin-right: -6px;
-`
+`;
 export const StyledPickerItem = styled(Picker.Item)`
   padding-left: 10px;
-`
+`;
 //* end picker
 
 //* start custom picker input
 type StyledCustomPickerContainerProps = {
-  isError?: boolean
-}
+  isError?: boolean;
+};
 export const StyledCustomPickerContainer = styled(
   View
 )<StyledCustomPickerContainerProps>`
@@ -208,15 +210,15 @@ export const StyledCustomPickerContainer = styled(
   shadow-opacity: 0.20;
   shadow-radius: 2.22px;
   elevation: 3; */
-`
+`;
 export const StyledCustomPickerContent = styled(TouchableOpacity)`
   flex: 1;
   justify-content: center;
-`
-export const StyledCustomPicker = styled(ScrollView)``
+`;
+export const StyledCustomPicker = styled(ScrollView)``;
 export const StyledCustomPickerItem = styled(TouchableOpacity)`
   padding: 13px 10px;
-`
+`;
 //* end picker
 
 //* datetimepicker
@@ -229,7 +231,7 @@ export const StyledDateTimePicker = styled(TouchableOpacity)`
   padding-left: 10px;
   height: 40px;
   border-width: 1px;
-`
+`;
 
 export const StyledPickerWrapper = styled(View)`
   width: 100%;
@@ -238,16 +240,16 @@ export const StyledPickerWrapper = styled(View)`
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.4);
-`
+`;
 
 //* Switch
 type StyledSwitchProps = {
-  value?: any
-}
+  value?: any;
+};
 export const SwitchContainerStyled = styled(View)`
   flex-direction: row;
   align-items: center;
-`
+`;
 
 export const SwitchToggleStyled = styled(TouchableOpacity)<StyledSwitchProps>`
   width: 48px;
@@ -263,7 +265,7 @@ export const SwitchToggleStyled = styled(TouchableOpacity)<StyledSwitchProps>`
       : props.theme.color.form[props.switchUnableBgColor] ||
         props.switchUnableBgColor ||
         props.theme.color.form.switchUnableBgColor};
-`
+`;
 
 export const SwitchHandleStyled = styled(View)<StyledSwitchProps>`
   width: 21px;
@@ -277,6 +279,6 @@ export const SwitchHandleStyled = styled(View)<StyledSwitchProps>`
       : props.theme.color.form[props.switchUnableHandleColor] ||
         props.switchUnableHandleColor ||
         props.theme.color.form.switchUnableHandleColor};
-  transform: translateX(${(props?: any) => (props.value ? '24px' : '2px')});
-`
+  transform: translateX(${(props?: any) => (props.value ? "24px" : "2px")});
+`;
 //* end Switch

@@ -1,10 +1,10 @@
-import styled from 'styled-components'
-import Icon from 'react-native-dynamic-vector-icons'
+import styled from "styled-components";
+import Icon from "react-native-dynamic-vector-icons";
 
 type StyledIconProps = {
-  iconSize?: any
-  color?: any
-}
+  iconSize?: any;
+  color?: any;
+};
 export const StyledIcon = styled(Icon)<StyledIconProps>`
   font-size: ${(props) =>
     props.theme.fontSize[props?.iconSize] ||
@@ -14,4 +14,4 @@ export const StyledIcon = styled(Icon)<StyledIconProps>`
     props.theme.color.icon[props?.color] ||
     props?.color ||
     props.theme.color.icon.gray500};
-`
+`;

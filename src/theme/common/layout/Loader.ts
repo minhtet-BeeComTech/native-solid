@@ -1,5 +1,5 @@
-import { Animated } from 'react-native'
-import styled from 'styled-components'
+import { Animated } from "react-native";
+import styled from "styled-components";
 
 export const StyledLoader = styled(Animated.View)`
   flex: 1;
@@ -15,11 +15,11 @@ export const StyledLoader = styled(Animated.View)`
   left: 0;
   elevation: 0;
   background-color: ${(props?: any) =>
-    props?.loadingBgColor === 'transparent'
-      ? props.theme.color.mode === 'light'
-        ? 'rgba(253, 253, 253, .5)'
-        : 'rgba(7, 7, 7, .3)'
+    props?.loadingBgColor === "transparent"
+      ? props.theme.color.mode === "light"
+        ? "rgba(253, 253, 253, .5)"
+        : "rgba(7, 7, 7, .3)"
       : props.theme.color.loading[props?.loadingBgColor] ||
         props?.loadingBgColor ||
         props.theme.color.loading.white};
-`
+`;

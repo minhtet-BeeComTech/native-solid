@@ -1,8 +1,8 @@
-import { View } from 'react-native'
-import styled from 'styled-components'
+import { View } from "react-native";
+import styled from "styled-components";
 
 //* start Modal
-export const StyledModalContainer = styled(View)``
+export const StyledModalContainer = styled(View)``;
 
 export const StyledModalContent = styled(View)`
   background-color: ${(props: any) =>
@@ -10,5 +10,5 @@ export const StyledModalContent = styled(View)`
     props.modalBgColor ||
     props.theme.color.modal.modalBgColor};
   border-radius: ${(props: any) => props.theme.modalVariable.borderRadius}px;
-`
+`;
 //* end Modal

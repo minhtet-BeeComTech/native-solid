@@ -1,9 +1,9 @@
-import styled from 'styled-components'
-import { Pressable, TouchableOpacity } from 'react-native'
+import styled from "styled-components";
+import { Pressable, TouchableOpacity } from "react-native";
 
 type StyledPressableCardProps = {
-  isPressed: boolean
-}
+  isPressed: boolean;
+};
 export const StyledPressableCard = styled(Pressable)<StyledPressableCardProps>`
   ${(props?: any) => `
   border: 1px solid ${
@@ -30,7 +30,7 @@ export const StyledPressableCard = styled(Pressable)<StyledPressableCardProps>`
     props.theme.color.card.bgColor
   };
   `}
-`
+`;
 
 export const StyledCard = styled(TouchableOpacity)`
   border: 1px solid
@@ -53,4 +53,4 @@ export const StyledCard = styled(TouchableOpacity)`
     props.theme.color.card[props?.bgColor] ||
     props.bgColor ||
     props.theme.color.card.white};
-`
+`;
