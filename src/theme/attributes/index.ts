@@ -1,3 +1,3 @@
-export * from './color'
-export * from './font'
-export * from './general'
+export * from "./color";
+export * from "./font";
+export * from "./general";

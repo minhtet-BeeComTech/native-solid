@@ -1,7 +1,10 @@
 import { useContext } from "react";
 import { ThemeContext } from "styled-components";
 
-export const useTheme = (props: any) => {
+import * as theme from "theme/attributes";
+
+let baseTheme = { ...theme, color: theme.lightColor };
+export const useTheme = (props?: any) => {
   const theme = useContext(ThemeContext);
 
   if (!theme) {
@@ -10,5 +13,8 @@ export const useTheme = (props: any) => {
     );
   }
 
-  return theme;
+  return {
+    theme,
+    baseTheme,
+  };
 };

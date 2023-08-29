@@ -2,14 +2,14 @@ import React from "react";
 import { ThemeProvider } from "styled-components";
 
 import { ToastCom } from "components";
-import { useSettings } from "hooks";
+import { useTheme } from "hooks";
 
 export const NativeSolidProvider = ({
   children,
   themeProps,
   ...props
 }: any) => {
-  const { baseTheme } = useSettings();
+  const { baseTheme } = useTheme();
 
   return (
     <ThemeProvider theme={baseTheme} {...themeProps}>

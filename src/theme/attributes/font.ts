@@ -8,7 +8,7 @@ export const fontSize = {
   xs: 10,
   xxs: 8,
   xxxs: 5,
-}
+};
 
 export const lineHeight = {
   xxxl: 53.9,
@@ -18,27 +18,27 @@ export const lineHeight = {
   md: 22.1,
   sm: 17.5,
   xs: 14.1,
-}
+};
 
 export const fontFamily = {
-  f1: 'System',
-  f2: 'RobotoSlab-Regular',
-  f3: '',
-  f4: '',
-  f5: '',
-  f6: '',
+  f1: "System",
+  f2: "RobotoSlab-Regular",
+  f3: "",
+  f4: "",
+  f5: "",
+  f6: "",
   inter: {
-    black: 'Inter-Black',
-    bold: 'Inter-Bold',
-    extraBold: 'Inter-ExtraBold',
-    extraLight: 'Inter-ExtraLight',
-    light: 'Inter-Light',
-    medium: 'Inter-Medium',
-    regular: 'Inter-Regular',
-    semiBold: 'Inter-SemiBold',
-    thin: 'Inter-Thin',
+    black: "Inter-Black",
+    bold: "Inter-Bold",
+    extraBold: "Inter-ExtraBold",
+    extraLight: "Inter-ExtraLight",
+    light: "Inter-Light",
+    medium: "Inter-Medium",
+    regular: "Inter-Regular",
+    semiBold: "Inter-SemiBold",
+    thin: "Inter-Thin",
   },
-}
+};
 
 export const fontWeight = {
   xxxl: 900,
@@ -50,7 +50,7 @@ export const fontWeight = {
   xs: 300,
   xxs: 200,
   xxxs: 100,
-}
+};
 
 const spacingBySize: any = {
   // SF UI/Pro Text
@@ -131,7 +131,7 @@ const spacingBySize: any = {
   79: 0.0,
   80: 0.0,
   81: 0.0,
-}
+};
 
 export const fontSpacing = (size?: any) =>
-  spacingBySize[Math.min(Math.max(size, 6), 81)]
+  spacingBySize[Math.min(Math.max(size, 6), 81)];
