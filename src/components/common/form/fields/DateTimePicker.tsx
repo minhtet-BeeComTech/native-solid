@@ -3,7 +3,7 @@ import { View } from "react-native";
 import DateTimePicker from "@react-native-community/datetimepicker";
 import { format } from "date-fns";
 
-import { StyledDateTimePicker } from "theme";
+import { StyledDateTimePicker } from "../../../../theme";
 import { FieldContainer } from "./FieldContainer";
 import { TextCom } from "../../typo";
 

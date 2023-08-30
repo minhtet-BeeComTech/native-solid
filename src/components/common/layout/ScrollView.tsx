@@ -2,7 +2,7 @@ import React, { useContext, useRef } from "react";
 import { RefreshControl, View } from "react-native";
 import { ThemeContext } from "styled-components";
 
-import { StyleScrollView } from "theme";
+import { StyleScrollView } from "../../../theme";
 
 export const ScrollViewCom = ({ children, ...props }: any) => {
   const { refreshing, onRefresh, full } = props;

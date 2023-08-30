@@ -6,7 +6,7 @@ import {
   ButtonStyled,
   ButtonGradientStyled,
   PressableButtonStyled,
-} from "theme";
+} from "../../../theme";
 import { TextCom } from "../typo";
 
 export const ButtonCom: React.FC<CommonComponents.ButtonCom> = memo(

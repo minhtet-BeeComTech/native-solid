@@ -2,7 +2,7 @@ import React, { useState, useContext, useRef } from "react";
 import { TouchableOpacity, View, TextInput } from "react-native";
 import { ThemeContext } from "styled-components";
 
-import { StyledInput, StyledInputContainer } from "theme";
+import { StyledInput, StyledInputContainer } from "../../../../theme";
 import { FieldContainer } from "./FieldContainer";
 import { IconCom } from "../../icon";
 

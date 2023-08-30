@@ -5,7 +5,7 @@ import {
   SwitchContainerStyled,
   SwitchToggleStyled,
   SwitchHandleStyled,
-} from "theme";
+} from "../../../../theme";
 import { FieldContainer } from "./FieldContainer";
 
 export const SwitchCom: React.FC<FormComponents.SwitchCom> = ({

@@ -2,7 +2,7 @@ import React, { useState, useContext, useEffect } from "react";
 import { View } from "react-native";
 import { ThemeContext } from "styled-components";
 
-import { StyledFieldContainer } from "theme";
+import { StyledFieldContainer } from "../../../../theme";
 import { TextCom } from "../../typo";
 import { IconCom } from "../../icon";
 

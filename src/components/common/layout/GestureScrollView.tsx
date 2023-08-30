@@ -1,5 +1,6 @@
 import React from "react";
-import { StyleGestureScrollView } from "theme";
+
+import { StyleGestureScrollView } from "../../../theme";
 
 export const GestureScrollViewCom = ({ children, ...props }: any) => {
   return (

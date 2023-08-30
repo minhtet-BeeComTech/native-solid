@@ -2,7 +2,7 @@ import React, { memo, useEffect, useRef } from "react";
 import { Animated } from "react-native";
 import LinearGradient from "react-native-linear-gradient";
 
-import { StyledSkeletonContainer } from "theme";
+import { StyledSkeletonContainer } from "../../../theme";
 
 //* this component is demo stage
 export const SkeletonCom: React.FC<CommonComponents.SkeletonCom> = memo(

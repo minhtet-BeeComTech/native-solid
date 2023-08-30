@@ -1,7 +1,7 @@
 import React, { View } from "react-native";
 import Toast from "react-native-toast-message";
 
-import { StyledToast } from "theme";
+import { StyledToast } from "../../../theme";
 import { TextCom } from "../typo";
 
 const ToastType = ({ props = {}, ...otherProps }: any) => {

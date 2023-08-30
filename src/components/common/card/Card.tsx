@@ -1,6 +1,6 @@
 import React, { memo, useState } from "react";
 
-import { StyledCard, StyledPressableCard } from "theme";
+import { StyledCard, StyledPressableCard } from "../../../theme";
 import { TextCom } from "../typo";
 
 export const CardCom: React.FC<CommonComponents.CardCom> = memo(

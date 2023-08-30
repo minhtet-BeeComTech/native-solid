@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
 import { LottieAnimateCom } from "../animate";
-import { StyledLoader } from "theme";
+import { StyledLoader } from "../../../theme";
 
 export const LoaderCom: React.FC<CommonComponents.LoaderCom> = memo(
   ({ children, ...props }: any) => {

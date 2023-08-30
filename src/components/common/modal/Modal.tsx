@@ -7,7 +7,7 @@ import {
   StatusBar,
 } from "react-native";
 
-import { StyledModalContainer, StyledModalContent } from "theme";
+import { StyledModalContainer, StyledModalContent } from "../../../theme";
 
 let { height } = Dimensions.get("screen");
 export const ModalCom: React.FC<CommonComponents.ModalCom> = memo(

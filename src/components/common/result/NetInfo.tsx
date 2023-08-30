@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 import { View } from "react-native";
 
-import { StyledNetInfoContainer } from "theme";
+import { StyledNetInfoContainer } from "../../../theme";
 import { IconCom } from "../icon";
 import { TextCom } from "../typo";
 

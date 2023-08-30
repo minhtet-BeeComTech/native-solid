@@ -1,6 +1,6 @@
 import React, { memo } from "react";
 
-import { StyledCol } from "theme";
+import { StyledCol } from "../../../theme";
 
 export const Col: React.FC<CommonComponents.ColCom> = memo(
   ({ children, ...props }) => {

@@ -7,7 +7,7 @@ import {
   StyledCustomPicker,
   StyledCustomPickerItem,
   StyledCustomPickerContainer,
-} from "theme";
+} from "../../../../theme";
 import { FieldContainer } from "./FieldContainer";
 import { IconCom } from "../../icon";
 import { TextCom } from "../../typo";

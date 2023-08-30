@@ -1,5 +1,5 @@
 import React from "react";
-import { StyledCheckBoxCon, StyledCheckBox, StyledTick } from "theme";
+import { StyledCheckBoxCon, StyledCheckBox, StyledTick } from "../../../../theme";
 
 import { FieldContainer } from "./FieldContainer";
 

@@ -23,7 +23,7 @@ import {
   StyledTabBarsHeaderItemText,
   StyledTabBarsContentContainer,
   StyledTabBarsContentItemContainer,
-} from "theme";
+} from "../../../../theme";
 
 interface ITabBarsItem {
   title: string;

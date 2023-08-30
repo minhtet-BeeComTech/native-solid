@@ -9,7 +9,7 @@ import {
   StyledLeftContainer,
   StyledCenterContainer,
   StyledRightContainer,
-} from "theme";
+} from "../../../theme";
 
 export const HeaderCom: React.FC<CommonComponents.HeaderCom> = memo(
   ({

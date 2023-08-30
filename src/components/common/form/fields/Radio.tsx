@@ -1,6 +1,6 @@
 import React from "react";
-import { StyledRadioCon, StyledRadioCircle, StyledRB } from "theme";
 
+import { StyledRadioCon, StyledRadioCircle, StyledRB } from "../../../../theme";
 import { FieldContainer } from "./FieldContainer";
 
 export const RadioCom: React.FC<FormComponents.RadioCom> = ({

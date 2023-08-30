@@ -12,7 +12,7 @@ import { useNetInfo } from "@react-native-community/netinfo";
 import { ThemeContext } from "styled-components";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-import { StyledSafeContainer, StyledContainer } from "theme";
+import { StyledSafeContainer, StyledContainer } from "../../../theme";
 import { IconCom } from "../icon";
 import { NetInfoCom, CommingSoonCom } from "../result";
 import { LoaderCom } from "./Loader";
