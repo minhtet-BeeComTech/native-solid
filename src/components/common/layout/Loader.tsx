@@ -16,7 +16,7 @@ export const LoaderCom: React.FC<CommonComponents.LoaderCom> = memo(
             ) : (
               <LottieAnimateCom
                 style={{ width: 50, height: 50 }}
-                source={require("assets/animations/LogoLoading.json")}
+                source={require("../../../assets/animations/LogoLoading.json")}
                 loop
                 autoPlay
               />

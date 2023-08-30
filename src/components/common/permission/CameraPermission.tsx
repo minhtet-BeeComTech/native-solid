@@ -99,7 +99,7 @@ export const CameraPermissionCom = ({
           }}
         >
           <ImageCom
-            source={require("assets/images/onboarding4.png")}
+            source={require("../../../assets/images/onboarding4.png")}
             style={{ width: 320, height: 320, backgroundColor: "transparent" }}
           />
         </View>

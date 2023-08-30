@@ -86,12 +86,12 @@ export const SwiperCom: React.FC<CommonComponents.SwiperSliderCom> = memo(
                   thumbnailSource={
                     x?.[dataKey]
                       ? { uri: x?.[dataKey] }
-                      : require("assets/images/banner.png")
+                      : require("../../../assets/images/banner.png")
                   }
                   source={
                     x?.[dataKey]
                       ? { uri: x?.[dataKey] }
-                      : require("assets/images/banner.png")
+                      : require("../../../assets/images/banner.png")
                   }
                   style={{
                     width: "100%",

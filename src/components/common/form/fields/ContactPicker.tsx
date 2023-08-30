@@ -128,12 +128,12 @@ export const ContactPickerCom = ({
                 source={
                   item?.hasThumbnail
                     ? { uri: item?.thumbnailPath }
-                    : require("assets/images/Avatar/male.png")
+                    : require("../../../../assets/images/avatar/male.png")
                 }
                 thumbnailSource={
                   item?.hasThumbnail
                     ? { uri: item?.thumbnailPath }
-                    : require("assets/images/Avatar/male.png")
+                    : require("../../../../assets/images/avatar/male.png")
                 }
                 style={{
                   width: 40,
