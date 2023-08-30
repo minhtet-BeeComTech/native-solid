@@ -5783,10 +5783,10 @@ nanoid@^3.1.23, nanoid@^3.3.6:
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.3.6.tgz#443380c856d6e9f9824267d960b4236ad583ea4c"
   integrity sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==
 
-native-solid@^1.1.6:
-  version "1.1.6"
-  resolved "https://registry.yarnpkg.com/native-solid/-/native-solid-1.1.6.tgz#4680430d3c42fc546baeb669c607f31bf3014377"
-  integrity sha512-I7Hn8BnQZQ9XPjvmfI7uc5JK55Wstw3lHjx3MoHsqXURWdSBRJkdGO3NHvyiLCLuCmlL8PNAxOgl7o3OemtaMA==
+native-solid@^1.1.7:
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/native-solid/-/native-solid-1.1.7.tgz#a12a0a866e1d8fe3810556499b0ed529c0dcb58d"
+  integrity sha512-z3hy54uPYOqSuymNSMmuObSHPlcYHNumNhIc/7806FrWqGYI95jfzm52setiYg6TnxEdAgekWsGvBC3pAW859Q==
   dependencies:
     "@hookform/resolvers" "^3.2.0"
     "@react-native-community/datetimepicker" "^7.4.1"
