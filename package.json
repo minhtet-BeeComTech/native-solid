@@ -1,6 +1,6 @@
 {
   "name": "native-solid",
-  "version": "1.1.9",
+  "version": "1.1.10",
   "description": "facilitate react native workflow",
   "main": "./src",
   "scripts": {
