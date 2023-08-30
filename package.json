@@ -1,6 +1,6 @@
 {
   "name": "native-solid",
-  "version": "1.1.6",
+  "version": "1.1.7",
   "description": "facilitate react native workflow",
   "main": "./src",
   "scripts": {
@@ -60,6 +60,7 @@
     "yup": "^1.2.0"
   },
   "devDependencies": {
-    "@types/styled-components": "^5.1.26"
+    "@types/styled-components": "^5.1.26",
+    "@types/underscore": "^1.11.8"
   }
 }

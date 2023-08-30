@@ -1,8 +1,8 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
 
-import { ToastCom } from "components";
-import { useTheme } from "hooks";
+import { ToastCom } from "../components";
+import { useTheme } from "../hooks";
 
 export const NativeSolidProvider = ({
   children,
