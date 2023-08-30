@@ -7,13 +7,12 @@ import {
 } from '@react-navigation/native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-import {ToastCom, useTheme, NativeSolidProvider} from 'native-solid';
+import {ToastCom, NativeSolidProvider} from 'native-solid';
 import RootNavigator from './RootNavigation';
 
 export const navigationRef = createNavigationContainerRef();
 
 export default (props: any) => {
-  const {baseTheme} = useTheme();
 
   const deepLinking = {
     prefixes: ['http://nativesolid.com', 'nativesolid://'],
@@ -35,9 +34,7 @@ export default (props: any) => {
             ref={navigationRef}
             linking={deepLinking}
             fallback={null}
-            theme={
-              baseTheme?.color?.mode === 'dark' ? DarkTheme : DefaultTheme
-            }>
+            theme={DefaultTheme}>
             <RootNavigator {...props} />
           </NavigationContainer>
         </KeyboardAvoidingView>
